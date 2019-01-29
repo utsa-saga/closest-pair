@@ -100,51 +100,51 @@ int main(){
 
 		gridID right;
 		right.x = iGridCell.x+1;
-        		right.y = iGridCell.y;
-        		search = gridCells.find(right);
-        		if(search!=gridCells.end() && comparePointToCell(points[i],search->second,alpha))
+        	right.y = iGridCell.y;
+        	search = gridCells.find(right);
+        	if(search!=gridCells.end() && comparePointToCell(points[i],search->second,alpha))
             		return 0;
 
 		gridID top;
-        		top.x = iGridCell.x;
-        		top.y = iGridCell.y+1;
-       			search = gridCells.find(top);
-        		if(search!=gridCells.end() && comparePointToCell(points[i],search->second,alpha))
+        	top.x = iGridCell.x;
+        	top.y = iGridCell.y+1;
+       		search = gridCells.find(top);
+        	if(search!=gridCells.end() && comparePointToCell(points[i],search->second,alpha))
             		return 0;
 
 		gridID bottom;
-        		bottom.x = iGridCell.x;
-        		bottom.y = iGridCell.y-1;
-        		search = gridCells.find(bottom);
-        		if(search!=gridCells.end() && comparePointToCell(points[i],search->second,alpha))
+        	bottom.x = iGridCell.x;
+        	bottom.y = iGridCell.y-1;
+        	search = gridCells.find(bottom);
+        	if(search!=gridCells.end() && comparePointToCell(points[i],search->second,alpha))
             		return 0;
 
 		gridID upright;
-        		upright.x = iGridCell.x+1;
-        		upright.y = iGridCell.y+1;
-        		search = gridCells.find(upright);
-        		if(search!=gridCells.end() && comparePointToCell(points[i],search->second,alpha))
+        	upright.x = iGridCell.x+1;
+        	upright.y = iGridCell.y+1;
+        	search = gridCells.find(upright);
+        	if(search!=gridCells.end() && comparePointToCell(points[i],search->second,alpha))
             		return 0;
 
 		gridID downright;
-        		downright.x = iGridCell.x+1;
-        		downright.y = iGridCell.y-1;
+        	downright.x = iGridCell.x+1;
+        	downright.y = iGridCell.y-1;
        		search = gridCells.find(downright);
-        		if(search!=gridCells.end() && comparePointToCell(points[i],search->second,alpha))
+        	if(search!=gridCells.end() && comparePointToCell(points[i],search->second,alpha))
             		return 0;
 
 		gridID upleft;
-        		upleft.x = iGridCell.x-1;
-        		upleft.y = iGridCell.y+1;
-        		search = gridCells.find(upleft);
-        		if(search!=gridCells.end() && comparePointToCell(points[i],search->second,alpha))
+        	upleft.x = iGridCell.x-1;
+        	upleft.y = iGridCell.y+1;
+        	search = gridCells.find(upleft);
+        	if(search!=gridCells.end() && comparePointToCell(points[i],search->second,alpha))
             		return 0;
 
 		gridID downleft;
-        		downleft.x = iGridCell.x-1;
-        		downleft.y = iGridCell.y-1;
-        		search = gridCells.find(downleft);
-        		if(search!=gridCells.end() && comparePointToCell(points[i],search->second,alpha))
+        	downleft.x = iGridCell.x-1;
+        	downleft.y = iGridCell.y-1;
+        	search = gridCells.find(downleft);
+        	if(search!=gridCells.end() && comparePointToCell(points[i],search->second,alpha))
             		return 0;
 	}
 
